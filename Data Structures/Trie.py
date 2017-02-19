@@ -17,4 +17,4 @@ class Node:
 
 class Trie:
     def __init__(self):
-        
+
