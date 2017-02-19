@@ -62,6 +62,20 @@ myDict['a'] = 10
 print(myDict)
 # myDict.keys(), myDict.values()
 
+# DefaultDict
+from collections import defaultdict
+print("\nDefault Dict mapping to a list")
+myDict = defaultdict(list)
+myDict["a"].append(0)
+myDict["a"].append(1)
+print(myDict.items())
+
+print("\nDefault Dict mapping to an int")
+myDict = defaultdict(int)
+myDict["a"] += 1
+myDict["b"] += 2
+print(myDict.items())
+
 # Set
 print("\nSet")
 mySet = {1, 2, 3, 4}
