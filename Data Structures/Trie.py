@@ -50,5 +50,11 @@ class Trie:
 myTrie = Trie()
 myTrie.add("abcde")
 myTrie.add("apple")
+# should print 2
 print(myTrie.getNoOfAppearances("a"))
+
+# should print 1
 print(myTrie.getNoOfAppearances("ab"))
+
+# should print 0
+print(myTrie.getNoOfAppearances("b"))
