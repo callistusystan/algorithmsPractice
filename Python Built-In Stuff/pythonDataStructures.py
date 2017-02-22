@@ -1,6 +1,6 @@
 from random import randint
 aList = [1,2,3,4]
-nElements = 20
+nElements = 10
 
 # List
 print("List")
@@ -78,7 +78,7 @@ print(myDict.items())
 
 # Set
 print("\nSet")
-mySet = {1, 2, 3, 4}
+mySet = set([1,2,3,4])
 print(mySet)
 
 print("\nAdding 5 to set")
@@ -90,13 +90,15 @@ mySet.discard(5)
 print(mySet)
 
 # Min Heap
-from heapq import heappush, heappop
+from heapq import heappush, heappop, heapify
 print("\nMin Heap")
 
 def heappeek(myHeap):
     return myHeap[0]
 
-myMinHeap = []
+myMinHeap = [1,2,3,4]
+heapify(myMinHeap)
+
 for i in [randint(1,100) for _ in range(nElements)]:
     heappush(myMinHeap, i)
 print(myMinHeap)
@@ -106,21 +108,29 @@ for i in range(len(myMinHeap)):
     print(heappop(myMinHeap))
 
 # Max Heap
-def maxHeapPush(myHeap, data):
-    heappush(myHeap, -data)
-
-def maxHeapPeek(myHeap):
-    return -myHeap[0]
-
-def maxHeapPop(myHeap):
-    return -heappop(myHeap)
-
 print("\nMax Heap")
+
+class MaxHeapObject:
+    def __init__(self, value):
+        self.value = value
+
+    def __lt__(self, other):
+        return self.value > other.value
+
+    def __eq__(self, other):
+        return self.value == other.value
+
+    def __str__(self):
+        return str(self.value)
+
+    def __int__(self):
+        return self.value
+
 myMaxHeap = []
 for i in [randint(1,100) for _ in range(nElements)]:
-    maxHeapPush(myMaxHeap, i)
-print([-i for i in myMaxHeap])
+    heappush(myMaxHeap, MaxHeapObject(i))
+print([int(i) for i in myMaxHeap])
 
 print("\nPopping all from max heap")
 for i in range(len(myMaxHeap)):
-    print(maxHeapPop(myMaxHeap))
+    print(heappop(myMaxHeap))
