@@ -26,6 +26,12 @@ i=4
 i=5
     min = 1
     profit = 5
+profit[i] = max(profit[i-1], price[i] - min(price[0..i-1])
+
+notice profit[i] only cares about profit[i-1]
+    we can just use one variable for profit and update it each time
+notice min(price[0..i-1]), we can simplify it
+    we can just use one variable to keep the min price
 """
 
 from math import inf
@@ -34,8 +40,12 @@ def bestTime(prices):
     profit = 0
     minPrice = sys.maxsize
     for price in prices:
-        minPrice = min(minPrice, price)
+        # minPrice right now is min(price[0..i-1])
+        # profit[i] = max(profit[i-1], price[i] - minPrice)
         profit = max(profit, price-minPrice)
+
+        # set minPrice to min(price[0..i])
+        minPrice = min(minPrice, price)
     return profit
 
 print(bestTime([7,1,5,3,6,4]))
