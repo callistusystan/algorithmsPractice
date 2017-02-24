@@ -1,4 +1,3 @@
-import sys
 """
 [7,1,5,3,6,4]
  0 1 2 3 4 5
@@ -34,11 +33,9 @@ notice min(price[0..i-1]), we can simplify it
     we can just use one variable to keep the min price
 """
 
-from math import inf
-
 def bestTime(prices):
     profit = 0
-    minPrice = sys.maxsize
+    minPrice = float('inf')
     for price in prices:
         # minPrice right now is min(price[0..i-1])
         # profit[i] = max(profit[i-1], price[i] - minPrice)
