@@ -1,7 +1,3 @@
-"""
-
-"""
-
 class Tower:
     def __init__(self, index):
         self.discs = []

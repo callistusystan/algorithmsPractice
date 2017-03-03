@@ -5,11 +5,7 @@ rec(s, 0)
     [a]
     rec(s, 1)
         [ab, ba]
-        rec(s, 2)
-            [
-
 """
-
 def getPerms(string):
     if string is None:
         return None
@@ -27,7 +23,6 @@ def getPerms(string):
         for j in range(len(word)+1):
             s = insertCharAt(word, first, j)
             permutations.append(s)
-
     return permutations
 
 def insertCharAt(word, c, i):
