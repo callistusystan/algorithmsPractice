@@ -1,3 +1,5 @@
+// https://www.hackerrank.com/challenges/apple-and-orange
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;

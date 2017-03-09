@@ -1,3 +1,5 @@
+// https://www.hackerrank.com/challenges/sherlock-and-squares
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;

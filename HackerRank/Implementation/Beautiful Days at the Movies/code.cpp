@@ -1,3 +1,5 @@
+// https://www.hackerrank.com/challenges/beautiful-days-at-the-movies
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;

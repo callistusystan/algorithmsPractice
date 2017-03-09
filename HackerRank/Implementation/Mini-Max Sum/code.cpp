@@ -1,3 +1,5 @@
+// https://www.hackerrank.com/challenges/mini-max-sum
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
