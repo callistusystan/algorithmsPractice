@@ -4,7 +4,7 @@ After my recent technical interview at Google, I have decided to further increas
 
 Initially, I was working with Python, but I have decided to switch to C++ as one of my interviewers (Joe Hockey from Google) has advised me on the importance of memory management as well as checking for integer overflows.
 
-<br />
+<br  />
 The book I am currently following is "Competitive Programming 3", by Stephen Halim.
 
 https://www.amazon.com/Competitive-Programming-3rd-Steven-Halim/dp/B00FG8MNN8
