@@ -5,8 +5,6 @@ using namespace std;
 typedef vector<int> vi;
 typedef vector<vi> vvi;
 
-map<char, int> score;
-
 // Maximum unweighted bipartite matching using the Hopcroft - Karp algorithm .
 // Returns the number of matches and a vector of each left node ’s match ,
 // or -1 if the node had no match . Complexity : O( Sqrt (V) E)
@@ -127,9 +125,6 @@ void solve() {
 }
 
 int main() {
-  score['+'] = 1;
-  score['x'] = 1;
-  score['o'] = 2;
   int T;
   cin >> T;
   for (int t=1;t<=T;t++) {
