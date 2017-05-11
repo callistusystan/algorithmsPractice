@@ -1,0 +1,9 @@
+4 knights may be placed on a 2 row 2 column board.
+4 knights may be placed on a 2 row 3 column board.
+4 knights may be placed on a 2 row 4 column board.
+6 knights may be placed on a 2 row 5 column board.
+8 knights may be placed on a 2 row 6 column board.
+8 knights may be placed on a 2 row 7 column board.
+5 knights may be placed on a 3 row 3 column board.
+6 knights may be placed on a 3 row 4 column board.
+8 knights may be placed on a 3 row 5 column board.
