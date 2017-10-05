@@ -1,0 +1,30 @@
+DP[len] = min # of operations to complete the string from position lenToId
+
+------->len--------->
+
+DP[len] = min {
+  1 + DP[len+1]
+
+
+}
+
+giveaway of DP: is all the states previous to current independent
+from future?
+
+
+B
+
+remember that using B and T,
+  will cause freq[T] and freq[B] to be smaller
+
+freq[T] = freq[T] - (freq[T] - 1)
+
+
+
+
+C
+
+if looking for minimum,
+  think of :-
+    1. DP
+    2. Binary search
