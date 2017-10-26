@@ -18,7 +18,8 @@ int main() {
     G += A[i];
   }
 
-  cout << i << endl;
+  if (G >= K) cout << i << endl;
+  else cout << -1 << endl;
 
   return 0;
 }
